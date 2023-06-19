@@ -76,7 +76,7 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
 
     return (
         <div className="container d-flex justify-content-center">
-            <div className="col-6">
+            <div>
                 <h2 className="text-center mt-5">{fid ? "Edit Item" : "Add Item"}</h2>
                 <form action="" onSubmit={handleSubmit(onSubmit)} className="border border-dark rounded p-5 shadow-lg bg-body-tertiary rounded">
                     
