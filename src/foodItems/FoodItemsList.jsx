@@ -8,6 +8,7 @@ import axios from "axios";
 import { AddEditFoodItems } from "./AddEditFoodItems";
 import { FoodDetails } from "./FoodDetails";
 import { URL } from "./RoutesRecipies";
+import './style.css'
 
 // Parent component: RoutesRecipies
 // Its main page to show the list of items.
@@ -47,7 +48,12 @@ const FoodItemsList = () => {
                     {foodItems.map(item => (<FoodDetails foodItem={item} key={item.id} editFoodItemData={editFoodItemData} foodItems={foodItems} setFoodItems={setFoodItems}/>))}
                 </div>
 
-                : <h2 className="fs-16 text-center mt-3">No Items Availible Right now...Add some Dishes first!!!</h2>}
+                : <>
+                    <div className="center">
+                      <div className="ring"></div>
+                      <span>Loading...</span>
+                    </div>
+                </>}
               </>}  
         </div>
     )
