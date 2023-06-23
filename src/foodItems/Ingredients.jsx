@@ -102,17 +102,19 @@ export const Ingredients = ({ deleteFoodItem, foodItem, deleteData }) => {
                     marginTop: "5px",
                   }}
                 />
-                <input
-                  type="submit"
-                  className="btn btn-sm btn-secondary ms-2"
-                  value="Save"
-                />
-                <button
-                  className="btn btn-sm btn-danger ms-2"
-                  onClick={() => setEditId("")}
-                >
-                  Cancel
-                </button>
+                <div className="d-block mt-1">
+                    <input
+                      type="submit"
+                      className="btn btn-sm btn-secondary ms-2"
+                      value="Save"
+                    />
+                    <button
+                      className="btn btn-sm btn-danger ms-2"
+                      onClick={() => setEditId("")}
+                    >
+                      Cancel
+                    </button>
+                </div>
                 <ErrorMessage
                   errors={errors}
                   name="item"

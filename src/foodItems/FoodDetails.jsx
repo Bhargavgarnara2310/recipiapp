@@ -68,7 +68,7 @@ export const FoodDetails = ({ foodItem, editFoodItemData, foodItems, setFoodItem
     }
 
     return (
-        <div className="card m-3 py-4 " style={{ "width": "30rem" }}>
+        <div className="card m-3 py-4 " >
             <div className="d-flex justify-content-around align-items-center m-2" >
 
                 <div className="m-3">Item Name:
