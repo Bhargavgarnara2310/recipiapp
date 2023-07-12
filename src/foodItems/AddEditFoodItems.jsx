@@ -109,7 +109,7 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
                         )}  
                         />
                     </div>
-                    
+                    <div id="Help" class="form-text mt-2">Example : Bread, Butter, Spices</div>
                             
                     {fid ?
                         <input type="submit" className="btn btn-primary mt-3" value="Update Item" />
