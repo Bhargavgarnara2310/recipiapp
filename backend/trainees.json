@@ -1,319 +1,319 @@
 {
-  "trainees": [
-    {
-      "id": "1",
-      "name": "Bhargav",
-      "degree": "Btech"
-    },
-    {
-      "id": "2",
-      "name": "Kuldip",
-      "degree": "Btech"
-    },
-    {
-      "id": "3",
-      "name": "Bhargav",
-      "degree": "Mtech"
-    },
-    {
-      "id": "4",
-      "name": "Kuldip",
-      "degree": "Mtech"
-    },
-    {
-      "id": "5",
-      "name": "Kuldip",
-      "degree": "Mtech"
-    }
-  ],
-  "products": [
-    {
-      "name": "Nike Shoes Bhargav",
-      "brand": "Nike",
-      "price": "Rs 80000",
-      "id": "1"
-    },
-    {
-      "id": "2",
-      "name": "Nike Shoes 2",
-      "brand": "Nike",
-      "price": "Rs 1400",
-      "ammount": 1400
-    },
-    {
-      "id": "3",
-      "name": "Nike Shoes 3",
-      "brand": "Nike",
-      "price": "Rs 1300",
-      "ammount": 1300
-    },
-    {
-      "id": "4",
-      "name": "Nike Shoes 4",
-      "brand": "Nike",
-      "price": "Rs 1500",
-      "ammount": 1500
-    },
-    {
-      "id": "5",
-      "name": "Nike Shoes 5",
-      "brand": "Nike",
-      "price": "Rs 1400",
-      "ammount": 1400
-    },
-    {
-      "id": "6",
-      "name": "Nike Shoes 6",
-      "brand": "Nike",
-      "price": "Rs 1300",
-      "ammount": 1300
-    },
-    {
-      "id": "7",
-      "name": "Skechers Shoes 1",
-      "brand": "Skechers",
-      "price": "Rs 1200",
-      "ammount": 1200
-    },
-    {
-      "id": "8",
-      "name": "Skechers Shoes 2",
-      "brand": "Skechers",
-      "price": "Rs 1100",
-      "ammount": 1100
-    },
-    {
-      "id": "9",
-      "name": "Skechers Shoes 3",
-      "brand": "Skechers",
-      "price": "Rs 1000",
-      "ammount": 1000
-    },
-    {
-      "id": "10",
-      "name": "Skechers Shoes 4",
-      "brand": "Skechers",
-      "price": "Rs 1200",
-      "ammount": 1200
-    },
-    {
-      "id": "11",
-      "name": "Skechers Shoes 5",
-      "brand": "Skechers",
-      "price": "Rs 1100",
-      "ammount": 1100
-    },
-    {
-      "id": "12",
-      "name": "Skechers Shoes 6",
-      "brand": "Skechers",
-      "price": "Rs 1000",
-      "ammount": 1000
-    },
-    {
-      "id": "13",
-      "name": "Puma Shoes 1",
-      "brand": "Puma",
-      "price": "Rs 900",
-      "ammount": 900
-    },
-    {
-      "id": "14",
-      "name": "Puma Shoes 2",
-      "brand": "Puma",
-      "price": "Rs 800",
-      "ammount": 800
-    },
-    {
-      "id": "15",
-      "name": "Puma Shoes 3",
-      "brand": "Puma",
-      "price": "Rs 700",
-      "ammount": 700
-    },
-    {
-      "id": "16",
-      "name": "Puma Shoes 4",
-      "brand": "Puma",
-      "price": "Rs 900",
-      "ammount": 900
-    }
-  ],
-  "recipies": [
-    {
-      "itemname": "Dabeli",
-      "ingridients": [
-        "Pau"
-      ],
-      "id": 2
-    },
-    {
-      "itemname": "Foccasia",
-      "ingridients": [
-        " Bread"
-      ],
-      "id": 5
-    },
-    {
-      "itemname": "Dahiwada",
-      "ingridients": [
-        "Dahi"
-      ],
-      "id": 6
-    }
-  ],
-  "tutorials": [
-    {
-      "title": "MERN",
-      "description": "Mongo, ExpressJs, Reactjs",
-      "id": 1,
-      "published": true
-    }
-  ],
-  "icases": [
-    {
-      "id": 100,
-      "name": "iPhone Camouflage Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70421/251060/media__06733.1678846712.jpg",
-      "Brand": "Otterbox",
-      "price": 223,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 101,
-      "name": "iPhone Blue Orchid Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70359/250671/media__37993.1678846608.jpg",
-      "Brand": "Otterbox",
-      "price": 125,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 102,
-      "name": "iPhone X Berang Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70355/250652/media__84701.1678846601.jpg",
-      "Brand": "Otterbox",
-      "price": 544,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 103,
-      "name": "iPhone Mil Hard Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70094/249057/media__49278.1678846128.jpg",
-      "Brand": "Otterbox",
-      "price": 761,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 200,
-      "name": "iPhone 13 Pro leavedes Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70271/250067/media__81924.1678846440.jpg",
-      "Brand": "Spigen",
-      "price": 432,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 201,
-      "name": "iPhone 11 Pro Dual Touch Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70304/250304/media__08488.1678846509.jpg",
-      "Brand": "Spigen",
-      "price": 867,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 202,
-      "name": "iPhone 12 Pro Metal Hard Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70328/250472/media__22278.1678846555.jpg",
-      "Brand": "Spigen",
-      "price": 654,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 203,
-      "name": "iPhone 12 Pro Max Germer Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70314/250384/media__64920.1678846528.jpg",
-      "Brand": "Spigen",
-      "price": 323,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 300,
-      "name": "iPhone 13 Pro Max Germer Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70314/250384/media__64920.1678846528.jpg",
-      "Brand": "Pelican",
-      "price": 447,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 301,
-      "name": "iPhone 12 Pro Max Finger Hold Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70369/250737/media__22168.1678846625.jpg",
-      "Brand": "Pelican",
-      "price": 986,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 302,
-      "name": "iPhone 12 Pro Max Presasta Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70385/250843/media__67121.1678846652.jpg",
-      "Brand": "Pelican",
-      "price": 513,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 303,
-      "name": "iPhone 12 Pro White Simp Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70150/249348/media__49654.1678846216.jpg",
-      "Brand": "Pelican",
-      "price": 321,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 400,
-      "name": "iPhone 13 White Simp Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70150/249348/media__49654.1678846216.jpg",
-      "Brand": "Nomad",
-      "price": 543,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 401,
-      "name": "iPhone 13 Pro Max Simpsafed Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70389/250866/media__10057.1678846659.jpg",
-      "Brand": "Nomad",
-      "price": 864,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 402,
-      "name": "iPhone 12 Blue Strong Hard Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70420/251054/media__88242.1678846711.jpg",
-      "Brand": "Nomad",
-      "price": 200,
-      "qty": 1,
-      "inCart": false
-    },
-    {
-      "id": 403,
-      "name": "iPhone 12 Camouflag Hard Case",
-      "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70421/251060/media__06733.1678846712.jpg",
-      "Brand": "Nomad",
-      "price": 453,
-      "qty": 1,
-      "inCart": false
-    }
-  ]
-}
+    "trainees": [
+      {
+        "id": "1",
+        "name": "Bhargav",
+        "degree": "Btech"
+      },
+      {
+        "id": "2",
+        "name": "Kuldip",
+        "degree": "Btech"
+      },
+      {
+        "id": "3",
+        "name": "Bhargav",
+        "degree": "Mtech"
+      },
+      {
+        "id": "4",
+        "name": "Kuldip",
+        "degree": "Mtech"
+      },
+      {
+        "id": "5",
+        "name": "Kuldip",
+        "degree": "Mtech"
+      }
+    ],
+    "products": [
+      {
+        "name": "Nike Shoes Bhargav",
+        "brand": "Nike",
+        "price": "Rs 80000",
+        "id": "1"
+      },
+      {
+        "id": "2",
+        "name": "Nike Shoes 2",
+        "brand": "Nike",
+        "price": "Rs 1400",
+        "ammount": 1400
+      },
+      {
+        "id": "3",
+        "name": "Nike Shoes 3",
+        "brand": "Nike",
+        "price": "Rs 1300",
+        "ammount": 1300
+      },
+      {
+        "id": "4",
+        "name": "Nike Shoes 4",
+        "brand": "Nike",
+        "price": "Rs 1500",
+        "ammount": 1500
+      },
+      {
+        "id": "5",
+        "name": "Nike Shoes 5",
+        "brand": "Nike",
+        "price": "Rs 1400",
+        "ammount": 1400
+      },
+      {
+        "id": "6",
+        "name": "Nike Shoes 6",
+        "brand": "Nike",
+        "price": "Rs 1300",
+        "ammount": 1300
+      },
+      {
+        "id": "7",
+        "name": "Skechers Shoes 1",
+        "brand": "Skechers",
+        "price": "Rs 1200",
+        "ammount": 1200
+      },
+      {
+        "id": "8",
+        "name": "Skechers Shoes 2",
+        "brand": "Skechers",
+        "price": "Rs 1100",
+        "ammount": 1100
+      },
+      {
+        "id": "9",
+        "name": "Skechers Shoes 3",
+        "brand": "Skechers",
+        "price": "Rs 1000",
+        "ammount": 1000
+      },
+      {
+        "id": "10",
+        "name": "Skechers Shoes 4",
+        "brand": "Skechers",
+        "price": "Rs 1200",
+        "ammount": 1200
+      },
+      {
+        "id": "11",
+        "name": "Skechers Shoes 5",
+        "brand": "Skechers",
+        "price": "Rs 1100",
+        "ammount": 1100
+      },
+      {
+        "id": "12",
+        "name": "Skechers Shoes 6",
+        "brand": "Skechers",
+        "price": "Rs 1000",
+        "ammount": 1000
+      },
+      {
+        "id": "13",
+        "name": "Puma Shoes 1",
+        "brand": "Puma",
+        "price": "Rs 900",
+        "ammount": 900
+      },
+      {
+        "id": "14",
+        "name": "Puma Shoes 2",
+        "brand": "Puma",
+        "price": "Rs 800",
+        "ammount": 800
+      },
+      {
+        "id": "15",
+        "name": "Puma Shoes 3",
+        "brand": "Puma",
+        "price": "Rs 700",
+        "ammount": 700
+      },
+      {
+        "id": "16",
+        "name": "Puma Shoes 4",
+        "brand": "Puma",
+        "price": "Rs 900",
+        "ammount": 900
+      }
+    ],
+    "recipies": [
+      {
+        "itemname": "Dabeli",
+        "ingridients": [
+          "Pau"
+        ],
+        "id": 2
+      },
+      {
+        "itemname": "Foccasia",
+        "ingridients": [
+          " Bread"
+        ],
+        "id": 5
+      },
+      {
+        "itemname": "Dahiwada",
+        "ingridients": [
+          "Dahi"
+        ],
+        "id": 6
+      }
+    ],
+    "tutorials": [
+      {
+        "title": "MERN",
+        "description": "Mongo, ExpressJs, Reactjs",
+        "id": 1,
+        "published": true
+      }
+    ],
+    "icases": [
+      {
+        "id": 100,
+        "name": "iPhone Camouflage Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70421/251060/media__06733.1678846712.jpg",
+        "Brand": "Otterbox",
+        "price": 223,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 101,
+        "name": "iPhone Blue Orchid Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70359/250671/media__37993.1678846608.jpg",
+        "Brand": "Otterbox",
+        "price": 125,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 102,
+        "name": "iPhone X Berang Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70355/250652/media__84701.1678846601.jpg",
+        "Brand": "Otterbox",
+        "price": 544,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 103,
+        "name": "iPhone Mil Hard Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70094/249057/media__49278.1678846128.jpg",
+        "Brand": "Otterbox",
+        "price": 761,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 200,
+        "name": "iPhone 13 Pro leavedes Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70271/250067/media__81924.1678846440.jpg",
+        "Brand": "Spigen",
+        "price": 432,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 201,
+        "name": "iPhone 11 Pro Dual Touch Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70304/250304/media__08488.1678846509.jpg",
+        "Brand": "Spigen",
+        "price": 867,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 202,
+        "name": "iPhone 12 Pro Metal Hard Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70328/250472/media__22278.1678846555.jpg",
+        "Brand": "Spigen",
+        "price": 654,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 203,
+        "name": "iPhone 12 Pro Max Germer Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70314/250384/media__64920.1678846528.jpg",
+        "Brand": "Spigen",
+        "price": 323,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 300,
+        "name": "iPhone 13 Pro Max Germer Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70314/250384/media__64920.1678846528.jpg",
+        "Brand": "Pelican",
+        "price": 447,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 301,
+        "name": "iPhone 12 Pro Max Finger Hold Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70369/250737/media__22168.1678846625.jpg",
+        "Brand": "Pelican",
+        "price": 986,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 302,
+        "name": "iPhone 12 Pro Max Presasta Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70385/250843/media__67121.1678846652.jpg",
+        "Brand": "Pelican",
+        "price": 513,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 303,
+        "name": "iPhone 12 Pro White Simp Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70150/249348/media__49654.1678846216.jpg",
+        "Brand": "Pelican",
+        "price": 321,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 400,
+        "name": "iPhone 13 White Simp Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/2048x2048/products/70150/249348/media__49654.1678846216.jpg",
+        "Brand": "Nomad",
+        "price": 543,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 401,
+        "name": "iPhone 13 Pro Max Simpsafed Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70389/250866/media__10057.1678846659.jpg",
+        "Brand": "Nomad",
+        "price": 864,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 402,
+        "name": "iPhone 12 Blue Strong Hard Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70420/251054/media__88242.1678846711.jpg",
+        "Brand": "Nomad",
+        "price": 200,
+        "qty": 1,
+        "inCart": false
+      },
+      {
+        "id": 403,
+        "name": "iPhone 12 Camouflag Hard Case",
+        "img": "https://cdn11.bigcommerce.com/s-89a83/images/stencil/1920w/products/70421/251060/media__06733.1678846712.jpg",
+        "Brand": "Nomad",
+        "price": 453,
+        "qty": 1,
+        "inCart": false
+      }
+    ]
+  }
