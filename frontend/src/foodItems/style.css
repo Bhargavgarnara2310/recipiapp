@@ -50,6 +50,6 @@
     }
   }
   html {
-    overflow: hidden;
+    overflow: auto;
     overscroll-behavior: none;
   }
