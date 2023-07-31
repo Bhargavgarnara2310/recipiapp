@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 import { URL } from "./RoutesRecipies";
 import { useEffect } from "react";
 import { ErrorMessage } from "@hookform/error-message";
+import { useState } from "react";
 
 
 // Rendered in Parent Component: FoodItemList
@@ -14,6 +15,7 @@ import { ErrorMessage } from "@hookform/error-message";
 
 export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
     console.log("form rendered");
+    const [haveData, setHaveData] = useState([])
     const { register, handleSubmit, reset, setValue, formState: { errors }, clearErrors } = useForm();
 
    
@@ -57,6 +59,7 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
     const getFoodData = async () => {
         console.log("get data called");
         let { data } = await axios.get(`${URL.url}/${fid}`)
+        setHaveData(data)
         setValue("itemname", data.itemname);
         setValue("ing", (data.ingridients).join(','));
         window.scrollTo({
@@ -73,11 +76,11 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
     // eslint-disable-next-line
     },[fid])
 
-
+    console.log(typeof(haveData) )
     return (
         <div className="container d-flex justify-content-center">
             <div>
-                <h2 className="text-center mt-5">{fid ? "Edit Item" : "Add Item"}</h2>
+                <h2 className="text-center mt-5">{fid && Object.keys(haveData).length>0 ? "Edit Item" : "Add Item"}</h2>
                 <form action="" onSubmit={handleSubmit(onSubmit)} className="border border-dark rounded p-5 shadow-lg bg-body-tertiary rounded">
                     
                     <div className="mt-3">
@@ -111,10 +114,10 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
                     </div>
                     <div id="Help" class="form-text mt-2">Example : Bread, Butter, Spices</div>
                             
-                    {fid ?
+                    {fid && Object.keys(haveData).length>0 ?
                         <input type="submit" className="btn btn-primary mt-3" value="Update Item" />
                     :   <input type="submit" className="btn btn-primary mt-3" value="Submit" />}
-                        <button type="button" className="btn btn-danger ms-3 mt-3" onClick={()=>{if(errors){clearErrors();} reset(); if(fid){setFid(null)} }}>Cancel</button>
+                        <button type="button" className="btn btn-danger ms-3 mt-3" onClick={()=>{if(errors){clearErrors();} reset(); if(fid){setFid(null)} setHaveData({}) }}>Cancel</button>
                 </form> 
             </div>
         </div>

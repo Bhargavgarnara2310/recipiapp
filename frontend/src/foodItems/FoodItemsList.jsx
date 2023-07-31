@@ -14,14 +14,17 @@ import './style.css'
 // Its main page to show the list of items.
 const FoodItemsList = () => {
     console.log("list rendered");
+    const [loading, setLoading] = useState(false)
     const [foodItems, setFoodItems] = useState([]);
     const [editId, setEditId] = useState(null);
 
     // Function to fetch data from json server
     const fetchData = async () => {
         try {
+            setLoading(true)
             let { data } = await axios.get(URL.url);
-                setFoodItems(data)
+            setLoading(false)
+            setFoodItems(data)
         } catch (error) {
             console.log(error);
             setFoodItems("Server Down")
@@ -39,6 +42,15 @@ const FoodItemsList = () => {
     return (
         <div>
             <AddEditFoodItems fid={editId} setFid={setEditId} foodItems={foodItems} setFoodItems={setFoodItems}/>
+                {loading ? 
+                <>
+                    <div className="center">
+                      <div className="ring"></div>
+                      <span>Loading...</span>
+                    </div>
+                </>
+                : 
+            <>
             {foodItems === 'Server Down'? 
              <h2 className="fs-16 text-center mt-3">Sorry...Server Is Down!!!</h2>
             :
@@ -49,12 +61,11 @@ const FoodItemsList = () => {
                 </div>
 
                 : <>
-                    <div className="center">
-                      <div className="ring"></div>
-                      <span>Loading...</span>
-                    </div>
+                    <h2 className="text-center mt-4">No Dishes Availible...Add something...!</h2>
                 </>}
-              </>}  
+              </>}
+            </>
+              }  
         </div>
     )
 }
