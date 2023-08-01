@@ -14,6 +14,7 @@ import './style.css'
 // Its main page to show the list of items.
 const FoodItemsList = () => {
     console.log("list rendered");
+    const [isEditing, setIsEditing] = useState(false);
     const [loading, setLoading] = useState(false)
     const [foodItems, setFoodItems] = useState([]);
     const [editId, setEditId] = useState(null);
@@ -35,13 +36,14 @@ const FoodItemsList = () => {
     }, [])
 
     function editFoodItemData(fid) {
+        setIsEditing(true)
         console.log("id",fid);
         setEditId(fid)
     }
 
     return (
         <div>
-            <AddEditFoodItems fid={editId} setFid={setEditId} foodItems={foodItems} setFoodItems={setFoodItems}/>
+            <AddEditFoodItems fid={editId} setFid={setEditId} foodItems={foodItems} setFoodItems={setFoodItems} isEditing={isEditing} setIsEditing={setIsEditing}/>
                 {loading ? 
                 <>
                     <div className="center">

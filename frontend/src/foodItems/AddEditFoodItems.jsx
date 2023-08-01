@@ -9,12 +9,16 @@ import { useEffect } from "react";
 import { ErrorMessage } from "@hookform/error-message";
 import { useState } from "react";
 
+import './style.css'
+
+
 
 // Rendered in Parent Component: FoodItemList
 // Add and Edit component to add & edit data through form.
 
-export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
+export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems, isEditing, setIsEditing}) => {
     console.log("form rendered");
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [haveData, setHaveData] = useState([])
     const { register, handleSubmit, reset, setValue, formState: { errors }, clearErrors } = useForm();
 
@@ -24,12 +28,17 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
         let ingridients = ing.split(',')
 
         if (fid !== null) {
+            setIsSubmitting(true);
+
             await axios.put(`${URL.url}/${fid}`, { itemname, ingridients })
             Swal.fire({
                 title: 'Updated',
                 text: `Food Item Updated`,
                 icon: 'success',
             })
+
+            setIsSubmitting(false);
+
             setFoodItems(foodItems.map(item => {
                 if (item.id === fid) {
                     item.itemname = itemname;
@@ -42,12 +51,15 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
             reset()
 
         } else {
+            setIsSubmitting(true);
             let {data} = await axios.post(URL.url, { itemname, ingridients })
             Swal.fire({
                 title: 'Added',
                 text: `Food Item Added`,
                 icon: 'success',
             })
+
+            setIsSubmitting(false);
 
             setFoodItems([...foodItems, data])
             reset();
@@ -66,6 +78,7 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
             top: 0,
             behavior: "smooth"
         })
+        setIsEditing(false)
     }
 
     useEffect(()=>{
@@ -79,6 +92,7 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
     console.log(typeof(haveData) )
     return (
         <div className="container d-flex justify-content-center">
+            {isSubmitting || isEditing ? <div id="cover-spin"></div> : ''}
             <div>
                 <h2 className="text-center mt-5">{fid && Object.keys(haveData).length>0 ? "Edit Item" : "Add Item"}</h2>
                 <form action="" onSubmit={handleSubmit(onSubmit)} className="border border-dark rounded p-5 shadow-lg bg-body-tertiary rounded">
@@ -115,9 +129,9 @@ export const AddEditFoodItems = ({fid, setFid, foodItems, setFoodItems}) => {
                     <div id="Help" class="form-text mt-2">Example : Bread, Butter, Spices</div>
                             
                     {fid && Object.keys(haveData).length>0 ?
-                        <input type="submit" className="btn btn-primary mt-3" value="Update Item" />
-                    :   <input type="submit" className="btn btn-primary mt-3" value="Submit" />}
-                        <button type="button" className="btn btn-danger ms-3 mt-3" onClick={()=>{if(errors){clearErrors();} reset(); if(fid){setFid(null)} setHaveData({}) }}>Cancel</button>
+                        <input type="submit" className="btn btn-primary mt-3" value={isSubmitting ? "Wait..." : "Update Item"} disabled={isSubmitting} />
+                    :   <input type="submit" className="btn btn-primary mt-3" value={isSubmitting ? "Wait..." : "Submit"} disabled={isSubmitting} />}
+                        <button type="button" disabled={isSubmitting} className="btn btn-danger ms-3 mt-3" onClick={()=>{if(errors){clearErrors();} reset(); if(fid){setFid(null)} setHaveData({}) }}>Cancel</button>
                 </form> 
             </div>
         </div>
